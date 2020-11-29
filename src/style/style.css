@@ -1,16 +1,62 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
-
-p {
-    font-size: 35px; 
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-} 
 
 body, html {
   height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, a {
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand',Sans-Serif;
+}
+
+h1 {
+    font-size: 65pt;
+}
+
+h3 {
+    font-size: 45pt;
+}
+
+h4 {
+    font-size: 35pt;
+}
+
+h5 {
+    font-size: 25pt;
+}
+
+h6 {
+    font-size: 20pt;
+    transition: .3s;
+}
+
+p {
+    font-size: 30pt;
+}
+
+ul {
+    margin: 0, auto;
+}
+
+ul > li {
+    margin: 15px;
+}
+
+a {
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    width: auto;
+    height: 100%;
+    opacity: 0.5;
 }
 
 .parallax {  
@@ -25,10 +71,59 @@ body, html {
 }
 
 .section {
+    padding: 3% 0;
     height: 100%;
-    background-color: white;
+    background-color: black;
 }
 
-.intro {
-    height: 480px;
+.mouse {
+    margin-top: 10%;
+}
+
+.card {
+    width: 30%;
+    margin: 2%;
+    min-height: 50%;
+    border: honeydew;
+    border-style: solid;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.card > h5 {
+    margin-bottom: 15px;
+    background-color: gray;
+    border-radius: 7px 7px 0 0;
+}
+
+.card > .corpo {
+    padding: 5px;
+}
+
+.corpo > p {
+    font-size: 20pt;
+    transition: .3s;
+}
+
+.card:hover {
+    width: 35%;
+    box-shadow: gray;
+}
+
+.precos {
+    border: honeydew;
+    padding: 10px 0 0 0;
+    border-style: solid none none none;
+}
+
+.precos > .card {
+    margin: 25px auto;
+}
+
+.precos > .card:hover > .corpo > p {
+    font-size: 30pt;
+}
+
+.precos > .card:hover > h6 {
+    font-size: 15pt;
 }
